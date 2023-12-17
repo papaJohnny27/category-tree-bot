@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${DB_URL:localhost}:${DB_PORT:5432}/${DB_DATABASE_NAME:category_tree}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:eldos}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+
+telegram:
+  bot:
+    name: ${TELEGRAM_BOT_NAME:Category_Tree_DemoBot}
+    token: ${TELEGRAM_BOT_TOKEN:6768707521:AAHOO_AbcJJJAQfZ3mYLaESxM8Dmispf4uk}
